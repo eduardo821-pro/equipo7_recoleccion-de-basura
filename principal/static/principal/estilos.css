@@ -1,0 +1,170 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f2;
+    color: #333333;
+}
+
+
+/* =========================
+   MENÚ PRINCIPAL
+   ========================= */
+
+nav {
+    background-color: #2e7d32;
+    padding: 15px 30px;
+    border-bottom: 4px solid #1b5e20;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* IMAGEN DEL MENÚ */
+
+nav img {
+    width: 90px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid white;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+
+/* TÍTULO DEL MENÚ */
+
+nav h2 {
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+    margin: 0 25px 0 0;
+    font-size: 22px;
+}
+
+
+/* OPCIONES DEL MENÚ */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+    padding: 10px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* EFECTO AL PASAR EL RATÓN */
+
+nav a:hover {
+    background-color: #1b5e20;
+}
+
+
+/* =========================
+   CONTENIDO PRINCIPAL
+   ========================= */
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+
+/* TÍTULO PRINCIPAL */
+
+main h1 {
+    color: #2e7d32;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+
+/* SUBTÍTULOS */
+
+main h2 {
+    color: #388e3c;
+    margin-top: 30px;
+}
+
+
+/* PÁRRAFOS */
+
+main p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* LISTA */
+
+main ul {
+    background-color: white;
+    padding: 25px 40px;
+    border-left: 5px solid #4caf50;
+    border-radius: 6px;
+    line-height: 2;
+}
+
+
+/* =========================
+   BOTÓN
+   ========================= */
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+
+/* =========================
+   LÍNEAS
+   ========================= */
+
+hr {
+    border: 0;
+    border-top: 1px solid #c8d8c9;
+    margin: 0;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+   ========================= */
+
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
