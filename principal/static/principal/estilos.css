@@ -1,170 +1,333 @@
-/* =========================
-   CONFIGURACIÓN GENERAL
-   ========================= */
-
+/* Configuración general */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    margin: 0;
-    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f1f5f2;
-    color: #333333;
+    color: #26352c;
+    line-height: 1.6;
 }
 
-
-/* =========================
-   MENÚ PRINCIPAL
-   ========================= */
-
-nav {
-    background-color: #2e7d32;
-    padding: 15px 30px;
-    border-bottom: 4px solid #1b5e20;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-
-/* IMAGEN DEL MENÚ */
-
-nav img {
-    width: 90px;
-    height: 65px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 2px solid white;
-    vertical-align: middle;
-    margin-right: 12px;
-}
-
-
-/* TÍTULO DEL MENÚ */
-
-nav h2 {
-    display: inline-block;
+/* Menú de navegación */
+.menu {
+    background-color: #176b43;
     color: white;
-    vertical-align: middle;
-    margin: 0 25px 0 0;
-    font-size: 22px;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 
-/* OPCIONES DEL MENÚ */
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
-nav a {
+.logo h2 {
+    font-size: 20px;
+}
+
+.enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.enlaces a {
     color: white;
     text-decoration: none;
-    margin: 0 8px;
-    padding: 10px 12px;
+    padding: 9px 12px;
     border-radius: 5px;
-    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-
-/* EFECTO AL PASAR EL RATÓN */
-
-nav a:hover {
-    background-color: #1b5e20;
+.enlaces a:hover {
+    background-color: #0e4d30;
 }
 
-
-/* =========================
-   CONTENIDO PRINCIPAL
-   ========================= */
-
-main {
-    width: 90%;
-    max-width: 900px;
-    margin: 40px auto;
-}
-
-
-/* TÍTULO PRINCIPAL */
-
-main h1 {
-    color: #2e7d32;
+/* Página principal */
+.principal {
     text-align: center;
-    font-size: 32px;
-    margin-bottom: 25px;
-}
-
-
-/* SUBTÍTULOS */
-
-main h2 {
-    color: #388e3c;
-    margin-top: 30px;
-}
-
-
-/* PÁRRAFOS */
-
-main p {
-    font-size: 17px;
-    line-height: 1.7;
-}
-
-
-/* LISTA */
-
-main ul {
+    padding: 45px 20px;
     background-color: white;
-    padding: 25px 40px;
-    border-left: 5px solid #4caf50;
-    border-radius: 6px;
-    line-height: 2;
 }
 
+.principal h1 {
+    color: #176b43;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
 
-/* =========================
-   BOTÓN
-   ========================= */
+.principal p {
+    max-width: 750px;
+    margin: 0 auto 20px;
+    font-size: 17px;
+}
 
+.imagen-principal {
+    display: block;
+    width: 90%;
+    max-width: 650px;
+    max-height: 350px;
+    object-fit: cover;
+    margin: 25px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000025;
+}
+
+/* Botones */
+.boton,
 button {
-    background-color: #2e7d32;
+    display: inline-block;
+    background-color: #218c54;
     color: white;
+    text-decoration: none;
     border: none;
-    padding: 12px 20px;
-    margin-top: 15px;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: bold;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-
+.boton:hover,
 button:hover {
-    background-color: #1b5e20;
+    background-color: #145d37;
 }
 
-
-/* =========================
-   LÍNEAS
-   ========================= */
-
-hr {
-    border: 0;
-    border-top: 1px solid #c8d8c9;
-    margin: 0;
+/* Secciones */
+.seccion {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000012;
+    scroll-margin-top: 20px;
 }
 
+.seccion h2 {
+    color: #176b43;
+    margin-bottom: 15px;
+}
 
-/* =========================
-   PIE DE PÁGINA
-   ========================= */
+.seccion p {
+    margin-bottom: 12px;
+}
 
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b8c9bd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #218c54;
+    border-color: #218c54;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form button {
+    align-self: flex-start;
+}
+
+.aviso {
+    margin-top: 15px;
+    color: #606b63;
+    font-size: 13px;
+}
+
+/* Pie de página */
 footer {
-    background-color: #263238;
+    background-color: #176b43;
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
+/* Adaptación a celulares */
+@media (max-width: 650px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
 
-footer p {
-    margin: 0;
+    .logo {
+        flex-direction: column;
+    }
+
+    .enlaces {
+        justify-content: center;
+    }
+
+    .principal h1 {
+        font-size: 25px;
+    }
+
+    .seccion {
+        margin: 15px;
+        padding: 20px;
+    }
+}
+/* Sección de horarios */
+.descripcion-horarios {
+    margin-bottom: 20px;
+    color: #526158;
+}
+
+/* Contenedor de la tabla */
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Tabla de horarios */
+.tabla-horarios {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.tabla-horarios th {
+    background-color: #176b43;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.tabla-horarios td {
+    padding: 14px;
+    border-bottom: 1px solid #dce5de;
+}
+
+.tabla-horarios tbody tr:nth-child(even) {
+    background-color: #edf5ef;
+}
+
+.tabla-horarios tbody tr:hover {
+    background-color: #d8ecdd;
+}
+
+/* Aviso de horarios */
+.nota-horarios {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #fff5d9;
+    border-left: 4px solid #d9a52e;
+    border-radius: 5px;
     font-size: 14px;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+    .tabla-horarios th,
+    .tabla-horarios td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+/* Sección para reportar basura */
+.descripcion-reporte {
+    color: #526158;
+    margin-bottom: 20px;
+}
+
+/* Formulario de reportes */
+.formulario-reporte {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.formulario-reporte label {
+    color: #26352c;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.formulario-reporte input,
+.formulario-reporte select,
+.formulario-reporte textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b8c9bd;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.formulario-reporte input:focus,
+.formulario-reporte select:focus,
+.formulario-reporte textarea:focus {
+    outline: 2px solid #218c54;
+    border-color: #218c54;
+}
+
+.formulario-reporte textarea {
+    resize: vertical;
+}
+
+.formulario-reporte button {
+    margin-top: 10px;
+    padding: 13px;
+    background-color: #176b43;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario-reporte button:hover {
+    background-color: #0e4d30;
+}
+
+.aviso-reporte {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #e6f4e9;
+    border-left: 4px solid #218c54;
+    border-radius: 5px;
 }
