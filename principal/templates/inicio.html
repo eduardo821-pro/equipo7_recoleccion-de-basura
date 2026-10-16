@@ -110,7 +110,70 @@
     </p>
 </section>
 
+<section class="seccion" id="reportar">
+    <h2>Reportar un problema de basura</h2>
 
+    <p class="descripcion-reporte">
+        Ayúdanos a mantener limpia nuestra comunidad.
+        Completa el siguiente formulario para informar sobre
+        basura acumulada o problemas con la recolección.
+    </p>
+
+    <form class="formulario-reporte" action="#" method="get">
+
+        <label for="nombre">Nombre completo:</label>
+        <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Escribe tu nombre"
+            required
+        >
+
+        <label for="colonia">Colonia o comunidad:</label>
+        <input
+            type="text"
+            id="colonia"
+            name="colonia"
+            placeholder="Ejemplo: Zona Centro"
+            required
+        >
+
+        <label for="ubicacion">Ubicación del problema:</label>
+        <input
+            type="text"
+            id="ubicacion"
+            name="ubicacion"
+            placeholder="Calle o referencia"
+            required
+        >
+
+        <label for="tipo">Tipo de problema:</label>
+        <select id="tipo" name="tipo" required>
+            <option value="">Selecciona una opción</option>
+            <option value="basura_acumulada">Basura acumulada</option>
+            <option value="recoleccion_irregular">No pasó el camión</option>
+            <option value="contenedor_lleno">Contenedor lleno</option>
+            <option value="tiradero_clandestino">Tiradero clandestino</option>
+            <option value="otro">Otro problema</option>
+        </select>
+
+        <label for="descripcion">Descripción del problema:</label>
+        <textarea
+            id="descripcion"
+            name="descripcion"
+            rows="5"
+            placeholder="Describe lo que está sucediendo..."
+            required
+        ></textarea>
+
+        <button type="submit">Enviar reporte</button>
+    </form>
+
+    <p class="aviso-reporte">
+        Gracias por ayudar a mantener limpia nuestra comunidad.
+    </p>
+</section>
     
 <body>
 </html>
